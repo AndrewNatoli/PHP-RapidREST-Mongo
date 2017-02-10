@@ -1,0 +1,19 @@
+---
+server:
+    install: '1'
+    timezone: America/New_York
+    locale: en_US.UTF-8
+vagrant_local:
+    install: '1'
+    vm: { base_box: trusty64, hostname: mongoapi.dev, ip: 192.168.63.34, memory: '1536', sharedfolder: ./}
+apache:
+    install: '1'
+    docroot: /vagrant/rapidrest/public
+    serverport: 80
+    servername: mongoapi.dev
+php:
+    install: '1'
+    ppa: php
+composer:
+    install: '1'
+
