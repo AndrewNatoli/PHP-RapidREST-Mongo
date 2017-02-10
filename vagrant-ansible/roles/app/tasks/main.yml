@@ -1,0 +1,4 @@
+- name: Install composer dependencies for project
+  composer:
+    command: install
+    working_dir: /vagrant/rapidrest
